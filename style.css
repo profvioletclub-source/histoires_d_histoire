@@ -1,1 +1,113 @@
+/* 🌅 Palette orangée */
+:root {
+  --orange-light: #ffe5b4;
+  --orange: #ff9900;
+  --orange-dark: #cc6600;
+  --text-dark: #2c2c2c;
+  --bg-light: #fffaf2;
+}
 
+/* 🧱 Structure générale */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+header {
+  background-color: var(--orange);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0.2em 0;
+}
+
+/* 📦 Sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: var(--orange-dark);
+  color: white;
+  padding: 1em;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#sidebar.open {
+  left: 0;
+}
+
+#sidebar h2 {
+  margin-top: 0;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin: 1em 0;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#close-sidebar {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  float: right;
+}
+
+/* ☰ Toggle button */
+#sidebar-toggle {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  padding: 0.5em;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* 🔍 Section recherche */
+#search-section {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.search-button {
+  background-color: var(--orange-dark);
+  color: white;
+  padding: 0.8em 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* 🧾 Footer */
+footer {
+  background-color: var(--orange);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
