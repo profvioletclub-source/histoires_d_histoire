@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>  
+    <meta charset="UTF-8">
+    <title>Mon Profil Ksos</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="top-bar">
+      <h1>👤 Mon Profil Ksos</h1>
+      <a href="index.html">← Retour à l’accueil</a>
+
+      <div id="auth-bar">
+        <input type="text" id="identifier" placeholder="Pseudo ou Email">
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button id="login">Se connecter</button>
+        <button id="logout" style="display:none;">Se déconnecter</button>
+        <button id="go-to-signup">Créer un compte</button>
+        <div id="user-info"></div>
+        
+        <div id="debug" style="margin-top:1rem;"></div>
+        
+      </div>
+    </header>
+    <main>
+      <p>Du contenu pour les membres à venir...</p>
+    </main>
+
+    <footer>
+      <p>© Ksos - Tous droits réservés</p>
+    </footer>
+    
+    <script type="module" src="profil.js"></script>
+  </body>
+</html>
