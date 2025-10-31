@@ -111,3 +111,20 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* Empêche le débordement horizontal */
+body {
+  overflow-x: hidden;
+}
+
+/* Corrige la position de la sidebar hors écran */
+#sidebar {
+  left: -250px; /* assure qu'elle est bien hors champ */
+}
+
+/* Supprime tout espace blanc parasite */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
