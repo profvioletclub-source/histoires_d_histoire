@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Histoires d'Histoire</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Ksosiale">
+  <link rel="apple-touch-icon" href="assets/icons/IMG_0088.png">
+</head>
+<body>
+  <header>
+    <h1>Bibliothèque Ksosiale</h1>
+    <h1>Bienvenue dans un univers... unique</h1>
+    <a href="auteurs.html">Nos auteurs</a>
+  </header>
+
+  <button id="sidebar-toggle">☰</button>
+
+  <div id="sidebar">
+    <button id="close-sidebar">✖</button>
+    <h2>Autres accès</h2>
+    <ul>
+      <li><a href="profil.html">Mon Profil</a></li>
+      <li><a href="contact.html">Nous Contacter</a></li>
+    </ul>
+  </div>
+
+  <div id="popup-overlay">
+    <div id="popup-box">
+      <h2>📢 Bienvenue dans la Bibliothèque Ksosiale</h2>
+      <p>Le site est désormais disponible en application ! Si vous êtes déjà dans l'application, vous pouvez ignorer se message. Depuis Chrome par exemple, appuyez sur le bouton installer, depuis Safari, faite comme pour installer un raccourcis sur l'écran.</p>
+      <button id="close-popup">Fermer</button>
+    </div>
+  </div>
+  
+  <section id="search-section">
+    <a href="recherche.html" class="search-button">🔍 Accéder à la recherche</a>
+  </section>
+
+  <section id="categories" class="category-group">
+    <div class="category" id="fanfiction-zone">
+      <h2><a href="fanfiction.html">Fan Fictions</a></h2>
+    </div>
+    <div class="category" id="roman-zone">
+      <h2><a href="roman.html">Romans</a></h2>
+    </div>
+    <div class="category" id="docu-zone">
+      <h2><a href="documentaire.html">Documentaires</a></h2>
+    </div>
+    <div class="category" id="serie-zone">
+      <h2><a href="series.html">Séries</a></h2>
+    </div>
+    <div class="category" id="other-zone">
+      <h2><a href="autre.html">Autres</a></h2>
+    </div>
+  </section>
+  <section>
+    <p>Nouveauté : vos textes peuvent être publiés à tout moment ! Contactez-nous !</p>
+  </section>
+  
+  <footer>
+    <p>© Ksos - Tous droits réservés</p>
+  </footer>
+
+  <!-- 🔥 Script principal -->
+  <script type="module" src="scripts.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+  </script>
+</body>
+</html>
